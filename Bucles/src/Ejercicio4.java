@@ -15,14 +15,14 @@ public class Ejercicio4 {
 		System.out.println("Introduce otro numero entero:");
 		int num2=entrada.nextInt();
 		
-		int num3 = Math.min(num1, num2);
-		int num4= Math.max(num1, num2);
+		int menor = Math.min(num1, num2);
+		int mayor= Math.max(num1, num2);
 		
-		while (num3<=num4) {
-			if (num3%2!=0) {
-				System.out.println(num3);
+		while (menor<=mayor) {
+			if (menor%2!=0) {
+				System.out.println(menor);
 			}
-			num3++;
+			menor++;
 		}
 		
 		
