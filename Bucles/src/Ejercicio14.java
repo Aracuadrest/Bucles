@@ -24,13 +24,11 @@ public class Ejercicio14 {
 			
 
 			int i=0;
-			if (dividendo>=divisor) {
-				for(i=1;resta>=divisor;i++){
+			for(i=1;resta>=divisor;i++){
 					resta=resta-divisor;
-				}
-					
+				}	
 			System.out.println("El cociente entero es: "+i);
-			}
+			
 		
 			
 			
