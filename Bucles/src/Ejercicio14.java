@@ -15,26 +15,16 @@ public class Ejercicio14 {
 		System.out.println("Introduce otro numero entero (divisor):");
 		int divisor=entrada.nextInt();
 		
-		int resta=dividendo-divisor;
+		int resto=dividendo;
+		int cociente=0;
 		
-		
-		if (dividendo<divisor) {
-			System.out.println("Error. Ordena los números.");
-		}else {
-			
-
-			int i=0;
-			for(i=1;resta>=divisor;i++){
-					resta=resta-divisor;
+			while(resto>=divisor) {
+				resto=resto-divisor;
+				cociente++;
 				}	
-			System.out.println("El cociente entero es: "+i);
+			System.out.println("El cociente entero es: "+cociente+" \ny el resto es: "+resto);
 			
-		
-			
-			
-			
-		}
-
+	
 		
 	}
 
