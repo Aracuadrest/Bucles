@@ -8,23 +8,26 @@ import java.util.Scanner;
  * @author Araceli
  *
  */
-public class Ejercicio12 {
+public class Ejercicio12bis {
 
 	public static void main(String[] args) {
 		Scanner entrada = new Scanner(System.in);
-		System.out.println("Introduce un numero entero:");
+		System.out.println("Los numeros perfectos comprendidos");
+		System.out.println("Introduce un numero máximo a comprobar:");
 		int num = entrada.nextInt();
-		int suma = 0;
 		
-		for (int i = 1; i < num; i++) {
-			if (num % i == 0) {
+		
+		for(int perfecto=1; perfecto<=num;perfecto++) {
+			int suma = 1;
+			for (int i = 1; i < perfecto; i++) {
+				if (perfecto % i == 0) {
 				suma = suma + i;
+				}
 			}
-		}
-		if (suma == num) {
-			System.out.println("Numero perfecto");
-		} else {
-			System.out.println("Numero NO perfecto");
+			if (suma == num) {
+			System.out.println(perfecto);
+			
+			}
 		}
 	}
 

@@ -4,24 +4,24 @@ import java.util.Scanner;
  * @author Araceli
  *
  */
-public class Ejercicio13 {
+public class Ejercicio13bis {
 
 	public static void main(String[] args) {
 		Scanner entrada = new Scanner(System.in);
 		System.out.println("Introduce un numero entero:");
 		int num=entrada.nextInt();
 		int i =2;
-		boolean primo=true;
+		int divisores=0;
 		
-		for (i=2;i<num && primo;i++) {
+		for (i=2;i<num&&divisores==0;i++) {
 			if  (num%i==0) {
-			primo=false;
+				divisores++;
 			}
 		}		
-		if (primo) {
-			System.out.println("Es primo");
+		if (divisores>0) {
+			System.out.println("El numero es compuesto");
 		}else {
-			System.out.println("NO es primo");
+			System.out.println("El numero es primo");
 		}
 		
 
